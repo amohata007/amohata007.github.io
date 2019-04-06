@@ -19,7 +19,7 @@ $(document).ready(function() {
       if ($(window).width() < 768) {
         $('.nav-menu').slideUp();
       }
-    });
+    }); 
 
     $(this).addClass('active');
 
