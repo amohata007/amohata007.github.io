@@ -1,448 +1,618 @@
-<!DOCTYPE html>
-<html lang="en">  
-   
-<head>       
-  <!-- meta --> 
-  <meta charset="utf-8">   
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">  
- 
-  <title>My Website</title>
-  <meta content="" name="keywords">
-  <meta content="" name="description">  
+<!-- <!DOCTYPE html> -->
+<html lang="en">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Bootstrap CSS File -->  
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css" />
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/hover/hover.min.css" rel="stylesheet">        
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!-- Responsive css -->
-  <link href="css/responsive.css" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/favicon.png">
-
-  <!-- =======================================================
-    Theme Name: Folio
-    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+  <title>Abhishek Mohata | Senior Software Developer</title>
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
 
-  <!-- start section navbar -->
-  <nav id="main-nav">
-    <div class="row">
-      <div class="container">
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="/assets/img/passport-new.PNG"  class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
 
-        <div class="logo">
-          <a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
-        </div>
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
 
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
 
-        <ul class="nav-menu list-unstyled">
-          <li><a href="#header" class="smoothScroll">Home</a></li>
-          <li><a href="#about" class="smoothScroll">About</a></li>
-         <!-- <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-          <li><a href="#journal" class="smoothScroll">Blog</a></li>-->
-          <li><a href="#contact" class="smoothScroll">Contact</a></li>
-        </ul>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
 
-      </div>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Open Abhishek's resume in a new tab" href="https://amohata007.github.io/assets/resume/Abhishek_Mohata_Frontend.pdf" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Abhishek Mohata</a><span class="black-text">Senior Software Developer</span>
     </div>
   </nav>
-  <!-- End section navbar -->
 
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
 
-  <!-- start section header -->
-  <div id="header" class="home">
+      <li class="bold">
+        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+    </ul>
+  </nav>
 
-    <div class="container">
-      <div class="header-content">
-        <h1>I'm <span class="typed"></span></h1>
-
-        <ul class="list-unstyled list-social">
-                <li><a href="https://www.facebook.com/abhishek.mohata.79"><i class="ion-social-facebook" style="color:#3b5998;"></i></a></li>
-                <li><a href="https://twitter.com/AbhishekMohata7"><i class="ion-social-twitter" style="color:#00aced;"></i></a></li>
-                <li><a href="https://www.instagram.com/abhishekmohata/?hl=en"><i class="ion-social-instagram" style="color:#f09433;"></i></a></li>
-                <li><a href="https://github.com/amohata007/"><i class="ion-social-github" style="color:#000000;"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/abhishek-mohata-b48a5b15a "><i class="ion-social-linkedin" style="color:#3b5998;"></i></a></li>
-              
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- End section header -->
-
-
-  <!-- start section about us -->
-  <div id="about" class="paddsection">
-    <div class="container">
-      <div class="row justify-content-between">
-
-        <div class="col-lg-4 ">
-          <div class="div-img-bg">
-            <div class="about-img">
-              <img src="images/abc.jpg" class="img-responsive" alt="me">
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+              <h2>Hi, I'm <span class="teal">Abhishek Mohata.</span></h2>
+              <h5 style="color:#fff"><span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <h5>Building better web experiences—one pixel, one line of code at a time. With 4.5+ years of experience in frontend development, I specialize in crafting sleek, responsive, and user-friendly interfaces. While my core strength lies in the frontend, I'm actively expanding into full-stack development with hands-on experience in backend technologies like Node.JS, and databases such as MySQL and MongoDB. From polished UI components to scalable backend logic, I’m passionate about building end-to-end digital solutions that perform, delight, and make an impact.</h5>
+            </div>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/abhishek-mohata-b48a5b15a/" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/amohata007" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Contact Me</a>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-7">
-          <div class="about-descr">
-
-            <p class="p-heading">“If you're already a front-end developer, well, pretend you're also wearing a pirate hat.”</p>
-            <p class="separator">
-                “A successful website does three things:
-                It attracts the right kinds of visitors.
-                Guides them to the main services or product you offer.
-                Collect Contact details for future ongoing relation.”
-              </p>
-
-          </div>
-
-        </div>
       </div>
-    </div>
-  </div>
-  <!-- end section about us -->
-
-
-  <!-- start section services -->
-  <div id="services">
-    <div class="container">
-
-        <div class="services-carousel owl-theme">
-
-          <div class="services-block">
-
-            <i class="ion-ios-browsers-outline"></i>
-            <span>UI/UX DESIGN</span>
-            <p class="separator">Just learning these stuff. </p>
-
-          </div>
-
-         
-
-          <div class="services-block">
-
-            <i class="ion-ios-color-wand-outline"></i>
-            <span>WEB DEVELOPER</span>
-            <p class="separator">Love to make attractive and responsive websites.</p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-social-android-outline"></i>
-            <span>Front end developer</span>
-            <p class="separator">Now have good command in Html,Css and Javascript</p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-analytics-outline"></i>
-            <span>Hobbies</span>
-            <p class="separator">When no one is with you..Guitar helps you..GUITAR LOVER</p>
-
-          </div>
-
-          <div class="services-block">
-
-            <i class="ion-ios-camera-outline"></i>
-            <span>Others</span>
-            <p class="separator">Love to play almost each sport..and always wish to interact with new people. </p>
-
-          </div>
-
-        </div>
-
-    </div>
-
-  </div>
-  <!-- end section services -->
-
-
-  <!-- start section portfolio -->
-<!--  <div id="portfolio" class="text-center paddsection">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>My Portfolio</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-
-          <div class="portfolio-list">
-
-            <ul class="nav list-unstyled" id="portfolio-flters">
-              <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".branding">branding</li>
-              <li class="filter" data-filter=".mockups">mockups</li>
-              <li class="filter" data-filter=".uikits">ui kits</li>
-              <li class="filter" data-filter=".webdesign">web design</li>
-              <li class="filter" data-filter=".photography">photography</li>
-            </ul>
-
-          </div>
-
-          <div class="portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-              <a class="popup-img" href="images/portfolio/1.jpg">
-                <img src="images/portfolio/1.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-              <a class="popup-img" href="images/portfolio/2.jpg">
-                <img src="images/portfolio/2.jpg"  alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
-              <a class="popup-img" href="images/portfolio/3.jpg">
-                <img src="images/portfolio/3.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-              <a class="popup-img" href="images/portfolio/4.jpg">
-                <img src="images/portfolio/4.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-              <a class="popup-img" href="images/portfolio/5.jpg">
-                <img src="images/portfolio/5.jpg" alt="img">
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
-              <a class="popup-img" href="images/portfolio/6.jpg">
-                <img src="images/portfolio/6.jpg" alt="img">
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- End section portfolio -->-->
-
-
-  <!-- start section journal -->
- <!-- <div id="journal" class="text-left paddsection">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2>journal</h2>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="journal-block">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-1.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-2.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="#blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="journal-info">
-
-              <a href="blog-single.html"><img src="images/blog-post-3.jpg" class="img-responsive" alt="img"></a>
-
-              <div class="journal-txt">
-
-                <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                <p class="separator">To an English person, it will seem like simplified English
-                </p>
-
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-  </div>-->
-  <!-- End section journal -->
-
-
-  <!-- start sectoion contact -->
-  <form class="pure-form pure-form-stacked" id="gform" method="POST" data-email="amohata.005@gmail.com"
-  action="https://script.google.com/macros/s/AKfycbxOgG49QE-85WWWOxxesAtA_c7eabGhSkQ-GQwNX4swtj9HwW0/exec">
-  <div id="contact" class="paddsection">
-    <div class="container">
-      <div class="contact-block1">
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="contact-contact">
-
-              <h2 class="mb-30">GET IN TOUCH</h2>
-
-              <ul class="contact-details">
-                <li><span>Jecrc foundation</span></li>
-                <li><span>Jaipur,India</span></li>
-                <li><span>+91 7727910903</span></li>
-                <li><span>amohata.005@gmail.com</span></li>
-              </ul>
-
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                </div>
-
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- start sectoion contact -->
-
-
-  <!-- start section footer -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-            <li><a href="https://www.facebook.com/abhishek.mohata.79"><i class="ion-social-facebook" style="color:#3b5998;"></i></a></li>
-            <li><a href="https://twitter.com/AbhishekMohata7"><i class="ion-social-twitter" style="color:#00aced;"></i></a></li>
-            <li><a href="https://www.instagram.com/abhishekmohata/?hl=en"><i class="ion-social-instagram" style="color:#f09433;"></i></a></li>
-            <li><a href="https://github.com/amohata007/"><i class="ion-social-github" style="color:#000000;"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/abhishek-mohata-b48a5b15a "><i class="ion-social-linkedin" style="color:#3b5998;"></i></a></li>
+    </section>
+
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">
+        <blockquote>
+          <h2>
+            Frontend Enthusiast on the Journey to Full-Stack Mastery.
+          </h2>
+        </blockquote>      
+        <p>
+          I'm a Computer Science graduate from Jaipur Engineering College and Research Center with a strong love for problem-solving and clean code. I bring dedication and creativity to every project I work on, always aiming to deliver 100% quality and value.
+          Today, I’m passionate about building complex, user-centric web applications that solve real-world problems and scale to impact millions. I'm continuously evolving—learning new tools, improving performance, and crafting intuitive frontend experiences that make a difference.
+        </p>
+        <p>
+          <ul>
+            <li><b>Languages:</b> JavaScript, TypeScript, HTML, CSS</li>
+            <li><b>Backend & Databases:</b> NodeJS, MySQL, MongoDB</li>
+            <li><b>Libraries & Frameworks:</b> Angular, React, Aurelia, Angular Material, Tailwind CSS, Bootstrap</li>
+            <li><b>Tools & Technologies:</b> Git, JIRA, VS Code, Angular CLI</li>
+          </ul>
           
-        </ul>
-        <!--<i class="fa fa-facebook-official w3-hover-opacity" style="color:#3b5998;"></i>
-        <i class="fa fa-instagram w3-hover-opacity" style="color:#f09433;"></i>
-        <i class="fa fa-snapchat w3-hover-opacity" style="color:#fffc00;"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity" style="color:#c92228;"></i>
-        <i class="fa fa-twitter w3-hover-opacity" style="color:#00aced;"></i>
-        <i class="fa fa-linkedin w3-hover-opacity" style="color:#0077B5;"></i>-->
+        </p>
+        <p>
+          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- Third Section: Experience -->
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
+
+        <!-- Latest Experience -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.avaloninfosys.com/" target="_blank"><img alt="Avalon logo"
+                    src="/assets/img/avalon.png" class="responsive-img center-block" /></a>
+              </div>
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.avaloninfosys.com/" target="_blank"
+                      class="teal-text hoverline">Avalon</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Senior Software Engineer</div>
+            <ul>
+              <li>
+                Delivering robust feature enhancements and maintaining optimal performance for EdTech solutions.
+              </li>
+              <li>
+                Contributed to the development of multiple products within OpenEMIS ecosystem including Exams,Registrations and
+Core.
+              </li>
+              <li>Standardized reusable UI components and design patterns, streamlining development and reducing redundancy across
+                products.</li>
+              <li>Collaborated closely with cross-functional teams including backend, QA, and product stakeholders to align on feature
+                delivery and project timelines.</li>
+              <li>
+                Participated in regular code reviews and sprint planning, ensuring consistent delivery and adherence to quality standards
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>March 2025 - Present | Delhi - Remote</span>
+          </div>
+        </div>
+
+        
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.axxess.com/" target="_blank"><img alt="Axxess logo"
+                    src="/assets/img/Cavista.jpg" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.axxess.com/" target="_blank"
+                      class="teal-text hoverline">Cavista</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Frontend Engineer II</div>
+            <ul>
+              <li>
+                Built a custom frontend for a Hospice care platform used by U.S. home healthcare providers, aligning with industry
+standards and needs.
+              </li>
+              <li>Used React and Angular to develop fast, modular web apps, improving performance and user engagement.</li>
+              <li>Introduced a structured code review process,reducing bug incidents by 20% and elevating code quality</li>
+              <li>Mentored new frontend developers, speeding up onboarding and encouraging continuous learning.</li>
+              <li>Contributed to UI/UX design with ideas that improved usability and visual appeal, increasing user satisfaction by 15%.</li> 
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>July 2022 - March 2025 | Pune - Remote</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://www.accenture.com/" target="_blank"><img alt="Accenture logo"
+                    src="/assets/img/accenture.png" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.accenture.com/" target="_blank"
+                      class="teal-text hoverline">Accenture</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Application Development Analyst</div>
+            <ul>
+              <li>
+                Created efficient designs and developed User Interaction screens using HTML,CSS,Angular 2+, Material UI.
+              </li>
+              <li>
+                Utilized Chart.js for data visualization, enhancing user understanding and engagement
+              </li>
+              <li>
+                Implemented APIs to ensure seamless data loading, optimizing frontend performance and user experience.
+              </li>
+              <li>Conducted research and analysis to develop increasingly complex product features.</li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Jan 2021 - July 2022 | Pune - Remote</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fourth Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="/assets/img/netflix.jpg" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Netflix<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Find Trending Movies and Web Series
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> React, Redux, HTML, CSS, Bootstrap, Vercel, Git</li>
+                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                  <li>Search and filter Movies</li>
+                  <li>Trailer of most recent trending movies.</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://movies-gpt-kappa.vercel.app" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/amohata007/Movies-Gpt"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="/assets/img/youtube.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">YouTube<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Video Streaming Platform
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> React, Redux, TailwindCSS, HTML, CSS, Bootstrap, Git</li>
+                  <li>Search for videos.</li>
+                  <li>Stream videos.</li>
+                  <li>Trending Videos List</li>
+                  <li>Comment Chat Section</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/amohata007/Youtube-App"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="django web app" src="/assets/img/Shipping.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Shipping Track System<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Website that tracks the shipping courier.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Angular, Material UI, HTML, CSS, Angular CLI</li>
+                  <li>Users can track the parcels.</li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/amohata007/Shipping_Angular"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages and Databases</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/javascript.png" class="responsive-img" />JavaScript
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/typescript.jpg" class="responsive-img" />TypeScript
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/node.jpg" class="responsive-img" />NodeJS
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/mongo.png" class="responsive-img" />MongoDB
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML5
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Libraries and Frameworks</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/angularlatest.jpg" class="responsive-img" />Angular
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/react.png" class="responsive-img" />React
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/redux.png" class="responsive-img" />Redux
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/tailwind.png" class="responsive-img" />TailwindCSS
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/bootstrap.png" class="responsive-img" />Bootstrap
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/aurelia.jpg" class="responsive-img" />Aurelia
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+
+
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/vs.jpg" class="responsive-img" />VS Code
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/jira.jpg" class="responsive-img" />Jira
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications -->
+        <!-- <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Certificates</h4>
+            <div class="row text-left">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/mooc-machine-learning-coursera-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="/assets/img/mooc-algorithms-stanford-2-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Algorithms (Stanford)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
       </div>
+    </section>
 
-      <p>&copy; Copyrights . All rights reserved.</p>
+    <!-- Seventh Section: Education -->
+    <section id="education" class="section scrollspy">
+      <h3 class="page-title white-text teal">Education</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Education -->
+          <div class="col s12 m6 l6">
+            <div class="card">
+              <div class="card-content">
+                  <p class="green-text card-title">Jaipur Engineering College and Research Center</p>
+                <p class="brown-text">Jaipur, India</p>
+                <p>
+                  <b>Degree: </b>Bachelor of Technology in Computer Science     
+                  <br>
+                  <b>CGPA: </b>7.9
+                </p>
 
-      <div class="credits">
-        <!--
-          All the links in the footer should remain intact.
-          You can delete the links only if you purchased the pro version.
-          Licensing information: https://bootstrapmade.com/license/
-          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-        -->
-      <!--  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+                <ul>
+                  <p>
+                    <b>Relevant Courseworks:</b>
+                  <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Database Management Systems</li>
+                    <li>Operating Systems</li>
+                    <li>Computer Vision</li>
+                    <li>Foundations of Algorithms</li>                    
+                  </ul>
+                  </p>
+
+                </ul>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-  <!-- End section footer -->
+    <!-- Eight Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p>
+          <a aria-label="Call Abhishek" data-position="top" data-tooltip="Call Abhishek"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+              aria-label="Call Abhishek">+91 7727910903</a></a>
+        </p>
+        <p>
+          <a aria-label="Email Abhishek" href="mailto:amohata.005@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Abhishek" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Abhishek" href="mailto:amohata.005@gmail.com"
+              class="hoverline">amohata.005@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View Abhishek on GitHub" href="http://github.com/amohata007" target="_blank"
+            data-position="top" data-tooltip="View Abhishek on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Abhishek on Github" href="http://github.com/amohata007" class="hoverline"
+              target="_blank">github.com/amohata007</a></a>
+        </p>
+        <p>
+          <a aria-label="View Abhishek on LinkedIn" href="https://www.linkedin.com/in/abhishek-mohata-b48a5b15a/" target="_blank"
+            data-position="top" data-tooltip="View Abhishek on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i><a aria-label="Abhishek on LinkedIn" href="https://www.linkedin.com/in/abhishek-mohata-b48a5b15a/"
+              class="hoverline" target="_blank">https://www.linkedin.com/in/abhishek-mohata-b48a5b15a/</a></a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/typed/typed.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <!-- typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Frontend Developer",
+  "JavaScript Enthusiast",
+  "Fast Learner",
+  "Problem Solver",
+  "UI/UX Focused",
+  "Mastering DSA",
+  "Code. Create. Repeat. 💻"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
 
-  
-  <script data-cfasync="false" type="text/javascript"
-	src="js/form-submission-handler-1.js"></script>
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
 
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
 </body>
 
 </html>
